@@ -1,66 +1,50 @@
-<!DOCTYPE html>
-<html lang="my" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApexNet Myanmar - Ultra-Fast Fiber Broadband & Solutions</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<span style="font-size: 32px;">📞</span>
+                    <div style="text-align: left;">
+                        <span style="font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase;">Hotline 1</span>
+                        <strong style="font-size: 22px; color: #2563eb; display: block; font-weight: 900;">09967295390</strong>
+                    </div>
+                </a>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pyidaungsu:wght@400;600;700&display=swap');
-        body {
-            font-family: 'Pyidaungsu', sans-serif;
-        }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased">
-
-    <div class="bg-slate-950 text-slate-300 text-xs md:text-sm py-2 px-4 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-6">
-                <span><i class="fa-solid fa-phone text-cyan-400 mr-1.5"></i> 09-123456789</span>
-                <span class="hidden md:inline"><i class="fa-solid fa-envelope text-cyan-400 mr-1.5"></i> info@apexnet.com.mm</span>
-                <span class="hidden lg:inline"><i class="fa-solid fa-clock text-cyan-400 mr-1.5"></i> 24/7 Support Desk</span>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-viber"></i></a>
+                <!-- Phone 2 -->
+                <a href="tel:09764231220" style="background-color: #f8fafc; border: 2px solid #e2e8f0; padding: 20px 35px; border-radius: 18px; text-decoration: none; display: flex; align-items: center; gap: 15px; flex: 1 1 280px; max-width: 340px;">
+                    <span style="font-size: 32px;">📞</span>
+                    <div style="text-align: left;">
+                        <span style="font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase;">Hotline 2</span>
+                        <strong style="font-size: 22px; color: #2563eb; display: block; font-weight: 900;">09764231220</strong>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <div class="flex items-center space-x-3">
-                    <div class="w-11 h-11 bg-gradient-to-tr from-indigo-600 to-cyan-500 rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-md shadow-indigo-200">
-                        A
-                    </div>
-                    <div>
-                        <span class="text-2xl font-black text-slate-950 tracking-tight">Apex<span class="text-indigo-600">Net</span></span>
-                        <span class="text-xs font-bold text-cyan-600 ml-1">MYANMAR</span>
-                        <p class="text-[9px] text-slate-400 tracking-wider font-semibold uppercase -mt-1">A Subsidiary of Uplink</p>
-                    </div>
-                </div>
+    <!-- 5. Footer -->
+    <footer style="text-align: center; padding: 30px 20px; font-size: 13px; color: #94a3b8; border-top: 1px solid #e2e8f0; margin-top: 50px;">
+        © 2026 ApexNet Myanmar. All rights reserved. A Subsidiary of Uplink.
+    </footer>
 
-                <div class="hidden md:flex items-center space-x-8 font-semibold text-slate-600 text-sm">
-                    <a href="#home" class="hover:text-indigo-600 transition">ပင်မစာမျက်နှာ</a>
-                    <a href="#packages" class="hover:text-indigo-600 transition">Package များ</a>
-                    <a href="#services" class="hover:text-indigo-600 transition">ဝန်ဆောင်မှုများ</a>
-                    <a href="#coverage" class="hover:text-indigo-600 transition">လိုင်းရနိုင်သောနေရာများ</a>
-                    <a href="#contact" class="hover:text-indigo-600 transition">ဆက်သွယ်ရန်</a>
-                </div>
+    <!-- Tab Switch Script -->
+    <script>
+        function showTab(tabName) {
+            var packagesTab = document.getElementById('tab-packages');
+            var contactTab = document.getElementById('tab-contact');
+            var navHome = document.getElementById('nav-home');
+            var navPackages = document.getElementById('nav-packages');
+            var navContact = document.getElementById('nav-contact');
 
-                <div class="hidden md:block">
-                    <a href="#apply" class="bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-bold px-6 py-2.5 rounded-xl shadow-md shadow-indigo-200 transition">
-                        လိုင်းသစ် လျှောက်ထားရန်
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+            if (tabName === 'packages') {
+                packagesTab.style.display = 'block';
+                contactTab.style.display = 'none';
+                navHome.style.color = '#2563eb';
+                navPackages.style.color = '#2563eb';
+                navContact.style.color = '#475569';
+            } else if (tabName === 'contact') {
+                packagesTab.style.display = 'none';
+                contactTab.style.display = 'block';
+                navHome.style.color = '#475569';
+                navPackages.style.color = '#475569';
+                navContact.style.color = '#2563eb';
+            }
+        }
+    </script>
+</body>
+</html>
