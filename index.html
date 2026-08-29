@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApexNet Myanmar - Fiber Internet</title>
-    <!-- Swiper CSS (Slider အတွက်) -->
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <style>
         body { 
@@ -40,15 +40,18 @@
         }
         .header h1 { margin: 0; font-size: 24px; font-weight: bold; }
         .header p { color: #9ca3af; font-size: 14px; margin-top: 10px; }
-        .container { max-width: 800px; margin: 30px auto; padding: 0 15px; }
+        
+        .container { max-width: 950px; margin: 30px auto; padding: 0 15px; } /* ၃ ကွက်ဆံ့ရန် ချဲ့ထားသည် */
+        
         .packages-grid {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
         }
         @media (min-width: 768px) {
-            .packages-grid { grid-template-columns: 1fr 1fr; }
+            .packages-grid { grid-template-columns: 1fr 1fr 1fr; } /* Plan ၃ မျိုးအတွက် */
         }
+        
         .package-card {
             background: white;
             border-radius: 12px;
@@ -57,16 +60,23 @@
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-        .package-card.pro { border: 2px solid #3b82f6; }
-        .package-title { font-size: 14px; font-weight: bold; color: #64748b; text-transform: uppercase; margin-bottom: 10px; }
-        .package-pro-title { color: #3b82f6; }
+        .package-card.silver { border-top: 4px solid #94a3b8; }
+        .package-card.platinum { border-top: 4px solid #3b82f6; border-left: 1px solid #3b82f6; border-right: 1px solid #3b82f6; border-bottom: 1px solid #3b82f6;}
+        .package-card.diamond { border-top: 4px solid #8b5cf6; }
+
+        .package-title { font-size: 15px; font-weight: bold; color: #64748b; text-transform: uppercase; margin-bottom: 10px; }
+        .title-platinum { color: #3b82f6; }
+        .title-diamond { color: #8b5cf6; }
+
         .speed { font-size: 36px; font-weight: 900; color: #0f172a; }
         .speed span { font-size: 18px; color: #3b82f6; }
         .price { font-size: 18px; font-weight: bold; margin: 10px 0 20px 0; }
         .price span { font-size: 14px; color: #64748b; font-weight: normal; }
-        .features { text-align: left; font-size: 14px; line-height: 2; margin-bottom: 25px; color: #334155; }
+        
+        .features { text-align: left; font-size: 14px; line-height: 2.2; margin-bottom: 25px; color: #334155; }
         .features b { color: #0f172a; }
-        .btn-blue {
+        
+        .btn-call {
             display: block;
             background: #0284c7;
             color: white;
@@ -75,7 +85,10 @@
             border-radius: 8px;
             font-weight: bold;
         }
-        .btn-blue-solid { background: #3b82f6; }
+        .btn-silver { background: #64748b; }
+        .btn-platinum { background: #3b82f6; }
+        .btn-diamond { background: #8b5cf6; }
+
         .ads-slider-container {
             margin: 40px 0;
             border-radius: 12px;
@@ -137,34 +150,52 @@
     <div class="container">
         
         <div class="packages-grid">
-            <div class="package-card">
-                <div class="package-title">Home Starter</div>
+            
+            <!-- Silver Plan (ယခင် Starter) -->
+            <div class="package-card silver">
+                <div class="package-title">Silver Plan</div>
                 <div class="speed">15 <span>Mbps</span></div>
                 <div class="price">50,000 <span>MMK / လစဉ်</span></div>
                 <div class="features">
                     <div>✔ <b>Unlimited</b> (Data ကန့်သတ်ချက်မရှိ)</div>
-                    <div>✔ Installation Fees - <b>20,000 MMK</b></div>
-                    <div>✔ Wi-Fi Router အခမဲ့ တပ်ဆင်ပေးခြင်း</div>
-                    <div>✔ ဖုန်းနှင့် တီဗီများ အဆင်ပြေစွာ သုံးနိုင်ခြင်း</div>
+                    <div>✔ 1core Cable Fees - <b>20,000 MMK</b></div>
+                    <div>✔ wifi Router & တပ်ဆင်ခ အခမဲ့</div>
+                    <div>✔ 24/7 hour support</div>
                 </div>
-                <a href="tel:09967295390" class="btn-blue">📞 09967295390 သို့ ဖုန်းခေါ်မည်</a>
+                <a href="tel:09967295390" class="btn-call btn-silver">📞 09967295390 သို့ ခေါ်မည်</a>
             </div>
 
-            <div class="package-card pro">
-                <div class="package-title package-pro-title">Business Pro</div>
+            <!-- Platinum Plan (ယခင် Business) -->
+            <div class="package-card platinum">
+                <div class="package-title title-platinum">Platinum Plan</div>
                 <div class="speed">35 <span>Mbps</span></div>
                 <div class="price">80,000 <span>MMK / လစဉ်</span></div>
                 <div class="features">
                     <div>✔ <b>Unlimited</b> (Data ကန့်သတ်ချက်မရှိ)</div>
-                    <div style="color: #1e40af; font-weight: bold;">✔ Installation Fees - Free (တပ်ဆင်ခ အခမဲ့)</div>
-                    <div>✔ High-performance Wi-Fi Router</div>
+                    <div style="color: #1e40af; font-weight: bold;">✔ 1core cable Fees - Free ( အခမဲ့)</div>
+                    <div>✔ စက်ဖိုး & တပ်ဆင်ခ - Free ( အခမဲ့)</div>
                     <div>✔ 24/7 Priority Support & Low Ping</div>
                 </div>
-                <a href="tel:09967295390" class="btn-blue btn-blue-solid">📞 09967295390 သို့ အခုပဲ ဖုန်းခေါ်မည်</a>
+                <a href="tel:09967295390" class="btn-call btn-platinum">📞 09967295390 သို့ အခုပဲခေါ်မည်</a>
             </div>
+
+            <!-- Diamond Plan (အသစ်) -->
+            <div class="package-card diamond">
+                <div class="package-title title-diamond">Diamond Plan</div>
+                <div class="speed">50 <span>Mbps</span></div>
+                <div class="price">120,000 <span>MMK / လစဉ်</span></div>
+                <div class="features">
+                    <div>✔ <b>Unlimited</b> (Data ကန့်သတ်ချက်မရှိ)</div>
+                    <div style="color: #1e40af; font-weight: bold;">✔ 1core cable Fees - Free ( အခမဲ့)</div>
+                    <div>✔ စက်ဖိုး & တပ်ဆင်ခ - Free ( အခမဲ့)</div>
+                    <div>✔ VIP Support & Ultra Low Ping</div>
+                </div>
+                <a href="tel:09967295390" class="btn-call btn-diamond">📞 09967295390 သို့ အခုပဲခေါ်မည်</a>
+            </div>
+
         </div>
 
-        <!-- Promo Ads Slider (ပိုစတာများ နေရာ) -->
+        <!-- Promo Ads Slider -->
         <div class="ads-slider-container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
@@ -181,6 +212,7 @@
             </div>
         </div>
 
+        <!-- Contact Box -->
         <div class="contact-box">
             <h3>လိုင်းသစ်တပ်ဆင်ရန်နှင့် ဆက်သွယ်ရန်</h3>
             <p>အောက်ပါ ဖုန်းနံပါတ်များသို့ နေ့စဉ် ၂၄ နာရီ တိုက်ရိုက် ဆက်သွယ် မေးမြန်းနိုင်ပါသည်</p>
