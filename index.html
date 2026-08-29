@@ -41,7 +41,7 @@
         .header h1 { margin: 0; font-size: 24px; font-weight: bold; }
         .header p { color: #9ca3af; font-size: 14px; margin-top: 10px; }
         
-        .container { max-width: 950px; margin: 30px auto; padding: 0 15px; } /* ၃ ကွက်ဆံ့ရန် ချဲ့ထားသည် */
+        .container { max-width: 950px; margin: 30px auto; padding: 0 15px; }
         
         .packages-grid {
             display: grid;
@@ -49,7 +49,7 @@
             gap: 20px;
         }
         @media (min-width: 768px) {
-            .packages-grid { grid-template-columns: 1fr 1fr 1fr; } /* Plan ၃ မျိုးအတွက် */
+            .packages-grid { grid-template-columns: 1fr 1fr 1fr; } 
         }
         
         .package-card {
@@ -73,21 +73,22 @@
         .price { font-size: 18px; font-weight: bold; margin: 10px 0 20px 0; }
         .price span { font-size: 14px; color: #64748b; font-weight: normal; }
         
-        .features { text-align: left; font-size: 14px; line-height: 2.2; margin-bottom: 25px; color: #334155; }
+        .features { text-align: left; font-size: 14px; line-height: 2.2; margin-bottom: 5px; color: #334155; }
         .features b { color: #0f172a; }
         
-        .btn-call {
-            display: block;
-            background: #0284c7;
-            color: white;
-            text-decoration: none;
-            padding: 12px;
+        /* B2B Plan Banner (အစ်ကိုလိုချင်သော နေရာအသစ်) */
+        .b2b-banner {
+            background-color: #f1f5f9;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
             border-radius: 8px;
+            margin-top: 25px;
+            text-align: center;
+            font-size: 15px;
+            color: #334155;
             font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
-        .btn-silver { background: #64748b; }
-        .btn-platinum { background: #3b82f6; }
-        .btn-diamond { background: #8b5cf6; }
 
         .ads-slider-container {
             margin: 40px 0;
@@ -151,7 +152,7 @@
         
         <div class="packages-grid">
             
-            <!-- Silver Plan (ယခင် Starter) -->
+            <!-- Silver Plan -->
             <div class="package-card silver">
                 <div class="package-title">Silver Plan</div>
                 <div class="speed">15 <span>Mbps</span></div>
@@ -162,10 +163,9 @@
                     <div>✔ wifi Router & တပ်ဆင်ခ အခမဲ့</div>
                     <div>✔ 24/7 hour support</div>
                 </div>
-                <a href="tel:09967295390" class="btn-call btn-silver">📞 09967295390 သို့ ခေါ်မည်</a>
             </div>
 
-            <!-- Platinum Plan (ယခင် Business) -->
+            <!-- Platinum Plan -->
             <div class="package-card platinum">
                 <div class="package-title title-platinum">Platinum Plan</div>
                 <div class="speed">35 <span>Mbps</span></div>
@@ -176,10 +176,9 @@
                     <div>✔ စက်ဖိုး & တပ်ဆင်ခ - Free ( အခမဲ့)</div>
                     <div>✔ 24/7 Priority Support & Low Ping</div>
                 </div>
-                <a href="tel:09967295390" class="btn-call btn-platinum">📞 09967295390 သို့ အခုပဲခေါ်မည်</a>
             </div>
 
-            <!-- Diamond Plan (အသစ်) -->
+            <!-- Diamond Plan -->
             <div class="package-card diamond">
                 <div class="package-title title-diamond">Diamond Plan</div>
                 <div class="speed">50 <span>Mbps</span></div>
@@ -190,20 +189,22 @@
                     <div>✔ စက်ဖိုး & တပ်ဆင်ခ - Free ( အခမဲ့)</div>
                     <div>✔ VIP Support & Ultra Low Ping</div>
                 </div>
-                <a href="tel:09967295390" class="btn-call btn-diamond">📞 09967295390 သို့ အခုပဲခေါ်မည်</a>
             </div>
 
+        </div>
+
+        <!-- B2B Box -->
+        <div class="b2b-banner">
+            B2B plan ပြန်လည်ရောင်းချလိုသောသူများအနေဖြင့် အထူးဈေးနှုန်းကို ဆက်သွယ်မေးမြန်းနိုင်ပါသည်
         </div>
 
         <!-- Promo Ads Slider -->
         <div class="ads-slider-container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!-- ပုံ ၁ -->
                     <div class="swiper-slide">
                         <img src="1788002022165.png" alt="Promo 1">
                     </div>
-                    <!-- ပုံ ၂ -->
                     <div class="swiper-slide">
                         <img src="1788002136339.png" alt="Promo 2">
                     </div>
@@ -225,7 +226,7 @@
     </div>
 
     <div class="footer">
-        © 2026 ApexNet Myanmar. All rights reserved. A Subsidiary of Uplink.
+        © 2026 ApexNet Myanmar. All rights reserved. A Subsidiary of Uplink Myanmar.
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
