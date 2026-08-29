@@ -1,74 +1,34 @@
-<div class="plan-price-box">
-                        <div class="plan-price">80,000 <span>MMK / လစဉ်</span></div>
-                    </div>
-                    <ul class="feature-list">
-                        <li><strong>Unlimited</strong> (Data ကန့်သတ်ချက်မရှိ)</li>
-                        <li><strong>Installation Fees - Free</strong> (တပ်ဆင်ခ အခမဲ့)</li>
-                        <li>High-performance Dual-band Wi-Fi Router</li>
-                        <li>24/7 Priority Support & Stable Latency</li>
-                    </ul>
-                </div>
-                <button class="btn-card-action" onclick="openModal('Business Plan (35 Mbps - 80,000 MMK)')">
-                    📞 အခုပဲ ဖုန်းခေါ်ပြီး လျှောက်ထားမည်
-                </button>
-            </div>
-        </div>
-
-        <!-- Contact Box -->
-        <div class="contact-wrapper">
-            <h3>လိုင်းသစ်တပ်ဆင်ရန်နှင့် အသေးစိတ် စုံစမ်းရန်</h3>
-            <p>အောက်ပါ ဖုန်းနံပါတ်များသို့ နေ့စဉ် ၂၄ နာရီ တိုက်ရိုက် ဆက်သွယ် မေးမြန်းနိုင်ပါသည်</p>
-            <div class="hotline-grid">
-                <a href="tel:09967295390" class="hotline-btn">
-                    <span style="font-size: 26px;">📞</span>
-                    <div>
-                        <span>Hotline 1 (တိုက်ရိုက်ခေါ်ဆိုရန်)</span>
-                        <strong>09967295390</strong>
-                    </div>
-                </a>
-                <a href="tel:09764231220" class="hotline-btn">
-                    <span style="font-size: 26px;">📞</span>
-                    <div>
-                        <span>Hotline 2 (တိုက်ရိုက်ခေါ်ဆိုရန်)</span>
-                        <strong>09764231220</strong>
-                    </div>
-                </a>
-            </div>
+<div id="modalPlanDisplay" style="color: #06b6d4; font-weight: 700; font-size: 14px; margin-bottom: 16px;">Selected Plan</div>
+            <p style="font-size: 13px; color: #94a3b8; margin-bottom: 20px;">အောက်ပါ ခလုတ်ကို နှိပ်၍ ApexNet Customer Service သို့ တိုက်ရိုက် ဖုန်းခေါ်ဆို လျှောက်ထားနိုင်ပါသည်။</p>
+            <a href="tel:09967295390" style="display: block; background: linear-gradient(135deg, #22c55e, #16a34a); color: #ffffff; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 15px;">
+                📞 09967295390 သို့ ဖုန်းခေါ်မည်
+            </a>
         </div>
     </div>
 
-    <!-- Action Modal Popup -->
-    <div id="actionModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <div class="modal-title">လိုင်းသစ် လျှောက်ထားခြင်း</div>
-            <div id="modalPlanDisplay" class="modal-plan-name">Selected Plan</div>
-            <p style="font-size: 14px; color: #94a3b8;">အောက်ပါ ခလုတ်ကို နှိပ်၍ ApexNet Customer Service သို့ တိုက်ရိုက် ဖုန်းခေါ်ဆို လျှောက်ထားနိုင်ပါသည်။</p>
-            <a href="tel:09967295390" class="btn-call-direct">📞 09967295390 သို့ ဖုန်းခေါ်မည်</a>
-        </div>
+    <!-- 7. Floating Phone Button -->
+    <a href="tel:09967295390" style="position: fixed; bottom: 25px; right: 25px; background-color: #22c55e; color: #ffffff; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; text-decoration: none; box-shadow: 0 6px 25px rgba(34, 197, 94, 0.5); z-index: 99;" title="Call Now">
+        📞
+    </a>
+
+    <!-- 8. Footer -->
+    <div style="text-align: center; padding: 30px; font-size: 12px; color: #64748b; border-top: 1px solid #1e293b; margin-top: 40px;">
+        © 2026 ApexNet Myanmar. All rights reserved. A Subsidiary of Uplink.
     </div>
 
-    <!-- Floating Call Action -->
-    <a href="tel:09967295390" class="floating-action" title="Call Now">📞</a>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 ApexNet Myanmar. All rights reserved. A Subsidiary of Uplink.</p>
-    </footer>
-
-    <!-- Interactive Script -->
+    <!-- JavaScript For Popup Action -->
     <script>
         function openModal(planName) {
             document.getElementById('modalPlanDisplay').innerText = planName;
-            document.getElementById('actionModal').classList.add('active');
+            document.getElementById('actionModal').style.display = 'flex';
         }
         function closeModal() {
-            document.getElementById('actionModal').classList.remove('active');
+            document.getElementById('actionModal').style.display = 'none';
         }
         window.onclick = function(event) {
             var modal = document.getElementById('actionModal');
             if (event.target == modal) {
-                modal.classList.remove('active');
+                modal.style.display = 'none';
             }
         }
     </script>
